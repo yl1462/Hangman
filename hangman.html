@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hangman!</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <section id="word" style="float: left;">
+
+    </section>
+
+    <br /><br />
+
+    <section id="guess" onsubmit="processGuess()">
+        <form>
+            <input id="userInput"></input>
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <br />
+
+    <section id="gallows" style="float: right;">
+        <img src="images/strike-0.png" alt="picture of gallows">
+    </section>
+
+    <br />
+
+    <section id="strikes">
+        <p>You have tried:
+        <p id="wrongAnswers"></p>
+        </p>
+    </section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.js" crossorigin="anonymous"></script>
+<script src="scripts/script.js"></script>
+
+</html>
